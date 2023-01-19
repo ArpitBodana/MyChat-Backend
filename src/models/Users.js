@@ -22,4 +22,4 @@ const userSchema = new Schema(
   { timestamps: true }
 );
 
-export default mongoose.model("User", userSchema, "users");
+export default mongoose.model("ChatUser", userSchema, "chatusers");
