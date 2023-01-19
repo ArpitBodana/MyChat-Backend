@@ -23,11 +23,12 @@ app.use(express.urlencoded({ extended: false }));
 
 const server = http.createServer(app);
 //socket.io
-export const io = new Server(server, {
-  cors: {
-    origin: CLIENT_SOCKET,
-  },
-});
+export const io = new Server(server);
+// {
+//   cors: {
+//     origin: CLIENT_SOCKET,
+//   },
+// }
 
 let users = [];
 const addUser = (userId, socketId) => {
