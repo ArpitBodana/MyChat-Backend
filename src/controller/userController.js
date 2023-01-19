@@ -1,6 +1,6 @@
 import { LoginSchemaValidator, UserSchemaValidator } from "../validators";
 import bcrypt from "bcrypt";
-import { Conversations, Messages,} from "../models";
+import { Conversations, Messages, Users } from "../models";
 import { JwtServices } from "../services";
 
 const userController = {
