@@ -124,6 +124,7 @@ app.get("*", (req, res) => {
   res.json({ msg: "No route found !!" });
 });
 
-server.listen(APP_PORT, () => {
+const port = process.env.PORT || APP_PORT;
+server.listen(port, () => {
   console.log(`Server is running on port ${APP_PORT}`);
 });
